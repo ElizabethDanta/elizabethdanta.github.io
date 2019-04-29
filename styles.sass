@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto')
+
+$mainColor: rgb(90, 200, 250)
+$white: #ffffff
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	font-family: 'Raleway'
+
+header
+	width: 100%
+	padding: 40px
+	background: $mainColor
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+	& > img
+		width: 300px
+		height: 293px
+		border-radius: 50%
+
+	& > h1
+		color: $white
+		font-size: 36px
+		margin-top: 25px
+		cursor: default
+		font-weight: 600
+
+.container
+	width: 90%
+	margin: auto
+	padding: 10px
+
+	& > p
+		padding: 15px
+		font-size: 24px
+
+footer
+	width: 100%
+	background: $mainColor
+	padding: 10px
+	color: $white
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 24px
+	font-family: 'Roboto'
+
+	& p
+		padding: 0 10px 0 10px	
+
+@media (max-width: 1024px)
+	.container > p
+		font-size: 20px
+
+	footer
+		flex-direction: column
+
+		& p
+			padding: 5px 0 5px 0
+
+@media (max-width: 640px)
+	header > h1
+		font-size: 28px
